@@ -1,0 +1,20 @@
+{
+  "name": "re-size",
+  "version": "1.0.0",
+  "description": "Application for make responsive design fast",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "author": "CarOJ",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.8.2",
+    "electron-reload": "^1.2.2"
+  },
+  "dependencies": {
+    "bulma": "^0.6.2",
+    "font-awesome": "^4.7.0"
+  }
+}
