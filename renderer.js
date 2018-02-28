@@ -113,6 +113,10 @@ function addDevices() {
 }
 
 function Launch(device, width, height) {
+
+  let url = document.getElementById('url').value
+  let protocol = document.getElementById('protocol').value
+
   let win = new BrowserWindow({
     title: device,
     width: width,
@@ -126,7 +130,7 @@ function Launch(device, width, height) {
   win.on('closed', () => {
     win = null
   })
-  win.loadURL('http://localhost:4000/')
+  win.loadURL(protocol + url)//'http://localhost:4000/kamino')
   //win.openDevTools()
 }
 
