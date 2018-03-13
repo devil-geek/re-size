@@ -130,8 +130,8 @@ function Launch(device, width, height) {
   win.on('closed', () => {
     win = null
   })
-  win.loadURL(protocol + url)//'http://localhost:4000/kamino')
-  //win.openDevTools()
+  win.loadURL(protocol + url)
+  win.openDevTools()
 }
 
 

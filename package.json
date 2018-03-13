@@ -4,13 +4,18 @@
   "description": "Application for make responsive design fast",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager ./ Re-Size --all --out ~/Desktop/Re-Size --version 1.8.2 --overwrite --icon=./img/resize.svg.icns",
+    "package-mac": "electron-packager ./ Re-Size --platform=darwin --arch=x64 --out ~/Desktop/Re-Size --version 1.8.2 --overwrite --prune=true --icon=./img/resize.svg.icns",
+    "package-win": "electron-packager ./ Re-Size --asar=true --platform=win32 --arch=ia32 --out ~/Desktop/Re-Size --version 1.8.2 --overwrite --prune=true --icon=./img/resize.svg.ico",
+    "package-lin": "electron-packager ./ Re-Size --asar=true --platform=linux --arch=x64 --out ~/Desktop/Re-Size --version 1.8.2 --overwrite --prune=true --icon=./img/512x512.png"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/devil-geek/re-size.git",
   "author": "CarOJ",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "~1.8.2",
+    "electron-packager": "^11.1.0",
     "electron-reload": "^1.2.2"
   },
   "dependencies": {
